@@ -1,0 +1,37 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	display: grid;
+	/*第一列宽度，第二例auto，第三列宽度*/
+	grid-template-columns: 30px 50px auto 50px 30px;
+	/*第一行1/4，第二行高度，第三行auto*/
+	grid-template-rows: 60px 300px 100px;
+	border: 1px solid #FF0000;
+}
+.item{
+	border: 1px solid black;
+}
+.a{
+	/*第根线到第根线*/
+	grid-row-start:1 ;
+	grid-row-end:2 ;
+	grid-column-start:1 ;
+	grid-column-end:6 ;
+}
+.b{
+	grid-column-start:1 ;
+	grid-column-end:3 ;
+}
+.c{
+	grid-row-start:2 ;
+	grid-row-end:3 ;
+	grid-column-start:3 ;
+	grid-column-end:5 ;
+}
+.e{
+	grid-column-start:1 ;
+	grid-column-end:6 ;
+}
